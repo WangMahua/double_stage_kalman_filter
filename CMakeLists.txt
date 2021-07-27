@@ -121,8 +121,6 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-set(HEADERS_       src/dsk.h)
-set(SOURCES_       src/dsk.cpp)
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
@@ -209,6 +207,4 @@ set(SOURCES_       src/dsk.cpp)
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-add_executable(sub_data src/sub_data.cpp)
-target_link_libraries(sub_data ${catkin_LIBRARIES})
-add_dependencies(sub_data ncrl_sumer_camp_generate_messages_cpp)
+
